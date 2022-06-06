@@ -1,9 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:wght@500&display=swap');
 
-
-
-/* Header configuration */
+/* 1- Header configuration */
 header{
     padding: 1em;
     font-family: 'Roboto', sans-serif;
@@ -19,11 +17,11 @@ header{
 }
 
 .logo img{
-    max-width: 15%;
+    max-width: 50px;
     height:auto;
 }
 
-/* Configuration regarding links */
+/* 1.1 - Configuration regarding links */
 header .nav-list {
     list-style: none;
     font-family: 'Roboto', sans-serif;
@@ -37,7 +35,6 @@ li a, a {
     text-decoration: none;
     color:white;
 }
-
 .nav-list li {
     display:inline-block;
     padding:0px 20px;
@@ -50,7 +47,6 @@ li a, a {
     transition: all 0.25s ease 0s;
     border-bottom: solid 2.5px #767AF9;
 }
-
 .menu-line{
     width: 20px;
     height: 3px;
@@ -64,8 +60,8 @@ li a, a {
     opacity: 0,5;
 }
 
-/* Movile devices */
-@media all and (max-width: 1050px){
+/* 1.2-  Header configuration for movile devices */
+@media all and (max-width: 480px){
     body .content{
         display:none;
     }
@@ -77,11 +73,10 @@ li a, a {
         background-color: #333;
         flex-direction: column;
         align-items: center;
-        width: 35%;
+        width: 35%;    
         transform:translateX(100%);
         transition: transform 0.5s ease-in;
-    }
-    
+    }   
     .nav-list li{
         opacity:1;
         padding: 80px;
@@ -90,13 +85,13 @@ li a, a {
         display:block;
         cursor:pointer;
     }
-
 }
 
 .nav-active{
     transform: translateX(0%);
 }
 
+/* 2- Body */
 body{
     min-height: 100vh; 
     font-size: 10px;
@@ -129,7 +124,7 @@ body{
     transition: opacity .75s;
 }
     
-
+/* 3- Footer */
 footer{
     margin-top: auto;
     font-family: 'Roboto', sans-serif;
@@ -150,4 +145,74 @@ footer a{
 
 footer a:hover {
     color:#767AF9;
+}
+
+
+/* ----------------------------------------------------- */
+/* ---------------------Projects------------------------ */
+
+.project{
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    width: 250px;
+
+    border-right: solid 3%;
+    margin-left: 10px;
+    margin-top:10px;
+    height:calc(100%-20px);
+}
+
+.proj_header{
+    min-height: 25%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.proj_header_bott{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.proj_content{
+    min-height: 45%;
+    border-top: 1px solid black;
+
+}
+
+.proj_footer{
+    height:50px;
+    border-top: 1px solid black;
+    margin-top:auto;
+    display:flex;
+
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: #333;
+    font-size: 15px;
+    color:white;
+    
+
+}
+.proj_footer_left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proj_footer_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proj_footer_right:hover, .proj_footer_left:hover{
+    background-color: #767AF9;
+    color:#333;
+    transition: all 0.5s ease 0s;
 }
