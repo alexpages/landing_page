@@ -4,14 +4,14 @@
 /* ----------------------------------------------------- */
 /* ----------------Overall Configuration---------------- */
 
-
 /* 1- Header configuration */
 header{
     padding: 1em;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size:large;
-    background: #333
+    background: #19191E;
+    
 } 
 .navbar{
     display:flex;
@@ -20,9 +20,18 @@ header{
 }
 
 .logo img{
-    max-width: 50px;
-    height:auto;
+    max-width:60px;
+    height:auto; 
 }
+
+.logo{
+    display:flex;
+}
+
+.logo p{
+    margin-left: 15px;
+}
+
 
 /* 1.1 - Configuration regarding links */
 header .nav-list {
@@ -64,16 +73,16 @@ li a, a {
 }
 
 /* 1.2-  Header configuration for movile devices */
-@media all and (max-width: 480px){
+@media all and (max-width: 600px){
     body .content{
         display:none;
     }
     .nav-list{
         position: absolute;
         top: 6vh;
-        height:84vh;
+        height:86vh;
         right:0px;
-        background-color: #333;
+        background-color: #19191E;
         flex-direction: column;
         align-items: center;
         width: 35%;    
@@ -92,6 +101,7 @@ li a, a {
 
 .nav-active{
     transform: translateX(0%);
+    transition: transform 0.5s ease-in;
 }
 
 /* 2- Body */
@@ -133,7 +143,7 @@ footer{
     font-family: 'Roboto', sans-serif;
     height: 35px;
     padding: 0.5em 1em 0.5em 1em;
-    background: #333;
+    background: #19191E;
     font-size:50px;
     color:white;
     display:flex;
@@ -191,10 +201,11 @@ footer a:hover {
     margin-top:auto;
     display:flex;
 
+
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background: #333;
+    background: #0A0A10;
     font-size: 15px;
     border-bottom-left-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
@@ -216,7 +227,7 @@ footer a:hover {
 
 .proj_footer_right:hover, .proj_footer_left:hover{
     background-color: #767AF9;
-    color:#333;
+    color:#0A0A10;
     transition: all 0.5s ease 0s;
 }
 
@@ -225,4 +236,55 @@ footer a:hover {
     flex-wrap: wrap;
     padding:25px;
 
+}
+
+/* ----------------------------------------------------- */
+/* -----------------------About------------------------- */
+
+.section{
+    font-size:large;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+}
+
+.section p{
+    margin-bottom:0px;
+}
+
+.section_headers{
+    color:#03A75E;
+}
+
+.about_html{
+    display:flex;
+    justify-content: space-between;   
+}
+
+.stamps{
+    width:100px;
+    height:auto; 
+    margin-top:10px;
+}
+
+.flexcontainer{
+    display:flex;
+    align-items:flex-start; 
+}
+
+.education_container{
+    display:flex;
+    align-items:center; 
+}
+.about li {
+    list-style-position: outside;
+}
+.about_left{
+    display:flex;
+    flex-direction: column;
+}
+
+.about_right{
+    display:flex;
+    flex-direction: column;
 }

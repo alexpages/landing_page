@@ -9,42 +9,165 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/87b6d8fbb0.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"> </script>
 </head>
 
 <!-- Navigation Panel // Header-->
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src = "images/berserk.jpeg" alt="logo" onclick="window.location='./index.html' "style="cursor: pointer;">
-        </div>
-        <ul class="nav-list" id = "nav-list">
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-
-        <div class = "menu" id="toggle-button">    
-            <div class = "menu-line"></div>  
-            <div class = "menu-line"></div>  
-            <div class = "menu-line"></div>  
-        </div>   
-    </nav>
-</header>
-
-<script src="javascript.js"> </script>
-
-<!-- Layout and Content-->
-<body>
-    <div class = "content">
-        <h2> “About page, to be created” </h2>
-        <img class="landscape" src = "images/img1.png" alt="logo">
+<body class ="about">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src = "images/berserk.jpeg" alt="logo" onclick="window.location='./index.html' "style="cursor: pointer;">
+                <p class ="text">Alex Pages</p>
+            </div>
+            <ul class="nav-list" id = "nav-list">
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+    
+            <div class = "menu" id="toggle-button">    
+                <div class = "menu-line"></div>  
+                <div class = "menu-line"></div>  
+                <div class = "menu-line"></div>  
+            </div>   
+        </nav>
+    </header>
+    
+    <!-- Layout and Content-->
+    <div class = "section" id ="about">
+        <h2 class = "section_headers"> Software Engineer</h2>
+        <p> Currently developing his professional career in the IT industry
+            studying a master’s degree in Computer Engineering.
+            He is also dynamic, honest and results driven. Currently he is
+            studying Chinese and holds an HSK4. In the long term he would love
+            to develop his professional career in Asia.</p>
     </div>
 
-
-<!-- Footer-->
-</body>
+    <div class = "flexcontainer">
+        <div class ="about_left">
+            <div class = "section" id ="work_experience">
+                <h2 class = "section_headers"> Work Experience</h2>
+                <div>
+                    <h3>Technology Specialist Engineer / Ultimate Solutions</h3>
+                    <h4>06/2019 - 06/2021 Barcelona, Spain</h4>
+                    <ul>
+                        <li>Technology Specialist Engineer, worked in Serialization and
+                            Labelling dept. at client Grifols.</li>       
+                        <li>Implemented configurations for Systech and Zetes in the
+                            different Grifols packaging lines (Spain and Ireland).</li>
+                        <li>Coordinated different departments (Testing, Infrastructures,
+                            Validations, Engineering, etc.) to achieve the project goals.</li>   
+                        <li>Activities based on Systech and Zetes, SAP ECC, SAP ATTP.</li>
+                        <li>Developed client needs based on Systech’s Guardian regarding
+                            SAP Advanced Track and Trace Pharmaceuticals (Level 4).</li>
+                        <li>Managed a team of 3 people as a supervisor of the Ultimate
+                            Solutions team on Grifols.</li>
+                        <li>Activities based on softwares Systech and Zetes, SAP ECC, SAP
+                            ATTP.</li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h3>Intern Supply Base Development / Kautex Textron</h3>
+                    <h4>07/2018 - 02/2019 Barcelona, Spain</h4>
+                    <ul>
+                        <li>Managed and track supplier performance to ensure the delivery
+                            of high-quality parts.</li>       
+                        <li>Managed quality complaints in business CAQ and share supplier
+                            issues that could affect other plants & programs. (Quality claims
+                            management, 8D reports, and communication with customer).</li>
+                        <li>Understanding of FMEA, Control Plan, Flow Chart, BOM related
+                            to high quality parts. PPAP and knowledge related such as PSW,
+                            PDS, to ensure an efficient follow-up.</li>   
+                        <li>Support and track supplier 8D´s through the completion.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class = "section" id ="Education">
+                <h2 class = "section_headers"> Education</h2>
+                <div class= "education_container">
+                    <img class = "stamps" src = "images/logo-uoc-default.png" alt="stamps" onclick="window.location='https://www.uoc.edu/portal/en/index.html' "style="cursor: pointer;">
+                    <div>
+                        <ul>
+                            <li>Master’s degree in Informatics Engineering</li>
+                            <li>Open University of Catalonia</li>
+                            <li>2021 - 2024</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class= "education_container">
+                    <img class = "stamps" src = "images/upc-logo.png" alt="stamps" onclick="window.location='https://www.upc.edu/en?set_language=en' "style="cursor: pointer;">
+                    <div>
+                        <ul>
+                            <li>Bachelor’s degree in Electrical Engineering4</li>
+                            <li>Polytechnic University of Catalonia4</li>
+                            <li>2014 - 20194</li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    
+       
+        <div class = "about_right">
+            <div class = "section" id ="Technical Skills">
+                <h2 class = "section_headers"> Technical Skills</h2>
+                <div>
+                    <ul>
+                        <li>Technologies: Java, CSS, HTML, Python, JavaScript</li>
+                        <li>Framework/Libraries: Numpy, Pandas, Scikit, Keras</li>
+                        <li>Tools: VSCode, Inttellij, Eclipse</li>
+                        <li>Database: Learning SQL</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class = "section" id ="Certifications">
+                <h2 class = "section_headers"> Certifications</h2>
+                <div>
+                    <ul>
+                        <li>Certificate in Advanced English</li>
+                        <li>The Odin Project (HTML, CSS, JavaScript, Node, etc.)</li>
+                        <li>Building Asset Hierarchies with PI AF</li>
+                        <li>PI System Basics</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class = "section" id ="Languages">
+                <h2 class = "section_headers"> Languages</h2>
+                <div>
+                    <ul>
+                        <li>Spanish - Native</li>
+                        <li>Catalan - Native</li>
+                        <li>English - C1</li>
+                        <li>Chinese - HSK4</li>
+                        <li>Japanese - N5</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class = "section" id ="Soft_Skills">
+                <h2 class = "section_headers">Soft Skills</h2>
+                <div>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                        <li>Leadership</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer-->
     <footer>
         <a href="https://github.com/alexintelc"> <i class="fa-brands fa-github"></i></a>   
         <a href="https://www.linkedin.com/in/alex-pages/"> <i class="fa-brands fa-linkedin"></i> </a> 
     </footer>
+</body>
 </html>
+
 
